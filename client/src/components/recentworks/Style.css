@@ -1,0 +1,41 @@
+.custom-next-arrow{
+      position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(247, 9, 9, 0.5); /* Adjust as necessary */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -500px;
+   padding-left: 10px;
+}
+.custom-prev-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  background-color: rgba(247, 11, 11, 0.5); /* Adjust as necessary */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: -500px;
+  margin-left: 1300px;
+  padding-left: 10px;
+}
+
+.custom-next-arrow {
+  right: 10px; /* Adjust as necessary */
+}
+
+.custom-prev-arrow {
+  right: 70px; /* Adjust as necessary to ensure spacing between arrows */
+}
