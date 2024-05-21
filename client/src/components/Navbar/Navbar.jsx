@@ -1,14 +1,8 @@
 import React, { useState } from "react";
-// import {a} from "react-router-dom"
-// import { connect } from "react-redux";
 
 import logo from "../../assets/Images/propshop_logo.svg";
 function Navbar() {
-//   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-//   const toggleMobileMenu = () => {
-//     setIsMobileMenuOpen(!isMobileMenuOpen);
-//   };
   return (
     <nav>
       <nav className="bg-white dark:bg-pink-200 fixed w-full z-20 top-0 start-0">

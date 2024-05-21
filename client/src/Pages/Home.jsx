@@ -16,7 +16,7 @@ function Home() {
         <Search />
         <Gallery/>
         <Recentworks/>
-        {/* <Exhibition/> */}
+      
         <ExhibitionCard/>
       </div>
     </div>
