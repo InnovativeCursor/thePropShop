@@ -31,13 +31,12 @@ function Search() {
 
   return (
     <div className="mt-6">
-      <div className="flex justify-center items-center p-4 space-x-4 gap-8">
-        <div className="flex items-center">
+      <div className="resp flex justify-center items-center p-4 space-x-4 gap-8 ">
+        <div className="flex items-center ">
           <select
-            className="p-2 border rounded-md h-16 w-60 font-bold"
+            className="p-2 border rounded-md ml-4 h-16 w-60 font-bold"
             value={selectedLocation}
             onChange={handleLocationChange}
-            
           >
             <option value="">Choose Your Location</option>
             {Object.keys(boothSizes).map((location) => (

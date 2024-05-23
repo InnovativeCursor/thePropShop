@@ -1,11 +1,12 @@
 import React from "react";
 import "./Global.css";
+import { CiLocationOn } from "react-icons/ci";
 
 const GlobalPresence = () => {
   return (
     <div className="global-presence">
-      <h1>Global presence</h1>
-      <p>
+      <h1 className="font-bold">Global presence</h1>
+      <p className="text-2xl">
         Indulge yourself in our experiential array of exhibition stall design
         that has wowed the world.
       </p>
@@ -25,21 +26,27 @@ const GlobalPresence = () => {
       </div>
       <div className="map">
         <img
-          src="https://miro.medium.com/v2/resize:fit:918/1*e4mtcIuvCzwtCtuWqI52xA.png"
+          src="https://motherlinesusa.com/assets/image/Africa.jpg"
           alt="World Map"
         />
         <div className="locations">
-          <div className="location" style={{ top: "60%", left: "25%" }}>
-            Cape Town, South Africa
+          <div className="location" style={{ top: "40%", left: "55%" }}>
+            <CiLocationOn /> South Africa
           </div>
-          <div className="location" style={{ top: "40%", left: "45%" }}>
-            Location 2
+          <div className="location" style={{ top: "32%", left: "68%" }}>
+            <CiLocationOn /> India
           </div>
-          <div className="location" style={{ top: "30%", left: "65%" }}>
-            Location 3
+          <div className="location" style={{ top: "19%", left: "70%" }}>
+            <CiLocationOn /> Russia
           </div>
-          <div className="location" style={{ top: "50%", left: "85%" }}>
-            Location 4
+          <div className="location" style={{ top: "44%", left: "87%" }}>
+            <CiLocationOn /> Australia
+          </div>
+          <div className="location" style={{ top: "34%", left: "18%" }}>
+            <CiLocationOn /> Brazil
+          </div>
+          <div className="location" style={{ top: "20%", left: "30%" }}>
+            <CiLocationOn /> Canada
           </div>
         </div>
       </div>

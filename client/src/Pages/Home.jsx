@@ -12,8 +12,8 @@ import GlobalPresence from "../components/globalpresence/Global";
 
 function Home() {
   return (
-    <div>
-      <div className="bg-pink-200 pt-60 overflow-hidden">
+    <div className="overflow-hidden">
+      <div className="bg-pink-200 pt-60 ">
         <Navbar />
         <Banner />
         <Search />
@@ -22,8 +22,8 @@ function Home() {
       <Recentworks />
       <ExhibitionCard />
       <AwardWinning />
-      <AboutUsComponent/>
-      <GlobalPresence/>
+      <AboutUsComponent />
+      <GlobalPresence />
     </div>
   );
 }

@@ -1,8 +1,6 @@
-
-
 // AboutUsComponent.js
-import React from 'react';
-
+import React from "react";
+import style from './aboutus.module.css'
 const AboutUsComponent = () => {
   return (
     <div className="flex flex-col items-center justify-center bg-white py-16 px-4 sm:px-6 lg:px-8">
@@ -12,7 +10,7 @@ const AboutUsComponent = () => {
             About Us
           </h2>
           <p className="mt-4 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Top-Tier Exhibition Stall <br />  Designer
+            Top-Tier Exhibition Stall <br /> Designer
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
             Being the leading Exhibition Stall Designing and build-up agency,
@@ -37,8 +35,8 @@ const AboutUsComponent = () => {
           </div>
         </div>
 
-        <div className="mt-80 z-10 sticky  w-2/3">
-          <div className="flex justify-around bg-red-500 text-white py-8 px-4 rounded-lg shadow-md">
+        <div className="mt-80 xl:mt-96 px-11 mr-36 z-10 sticky xl:w-2/3 ">
+          <div className="flex flex-col md:flex-col p-24 md:px-7 lg:flex-col xl:flex-row justify-around bg-red-500 text-white py-8 px-4 rounded-lg shadow-md">
             <div className="text-center">
               <p className="text-2xl font-bold">10+</p>
               <p className="text-lg">Year Experience</p>

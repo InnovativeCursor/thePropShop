@@ -11,3 +11,11 @@ select {
   background-position-y: 50%;
   background-size: 20px; 
 }
+
+@media (max-width: 768px) {
+  .resp {
+    flex-direction: column;
+  }
+  
+ 
+}
