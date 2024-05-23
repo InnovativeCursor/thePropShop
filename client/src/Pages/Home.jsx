@@ -9,6 +9,9 @@ import ExhibitionCard from "../components/myservices/Exhibition1";
 import AwardWinning from "../components/awardwinning/Awardwinning";
 import AboutUsComponent from "../components/aboutus/AboutUs";
 import GlobalPresence from "../components/globalpresence/Global";
+import LogoSlider from "../components/LogoSlider/LogoSlider";
+import ContactForm from "../components/Contactform/ContactForm";
+import Footer from "../components/Footer/Footer";
 
 function Home() {
   return (
@@ -24,6 +27,9 @@ function Home() {
       <AwardWinning />
       <AboutUsComponent />
       <GlobalPresence />
+      <LogoSlider/>
+      <ContactForm/>
+      <Footer/>
     </div>
   );
 }

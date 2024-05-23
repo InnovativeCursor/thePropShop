@@ -42,7 +42,7 @@ const GlobalPresence = () => {
           <div className="location" style={{ top: "44%", left: "87%" }}>
             <CiLocationOn /> Australia
           </div>
-          <div className="location" style={{ top: "34%", left: "18%" }}>
+          <div className="location" style={{ top: "35%", left: "32%" }}>
             <CiLocationOn /> Brazil
           </div>
           <div className="location" style={{ top: "20%", left: "30%" }}>
