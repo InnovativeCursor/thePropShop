@@ -6,6 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
 }
 
 .contactForm {
@@ -16,7 +18,6 @@
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   max-width: 500px;
   width: 100%;
-
 }
 
 .contactForm h1 {
@@ -78,4 +79,62 @@
 
 .contactForm a:hover {
   text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .contactFormContainer {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .contactForm {
+    padding: 1rem;
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  .contactForm h1 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .contactForm p {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+
+  .policyContainer label {
+    font-size: 0.875rem;
+  }
+
+  .contactForm button {
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactFormContainer {
+    padding: 0.5rem;
+  }
+
+  .contactForm {
+    padding: 0.5rem;
+  }
+
+  .contactForm h1 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .contactForm p {
+    font-size: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .policyContainer label {
+    font-size: 0.75rem;
+  }
 }
