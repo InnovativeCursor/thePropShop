@@ -10,13 +10,13 @@ const AboutUsComponent = () => {
       <div className="max-w-7xl mx-auto">
         <Fade>
           <div className="lg:text-left absolute ">
-            <h2 className="text-4xl text-gray-600 font-semibold tracking-wide uppercase">
+            <h2 className="text-6xl text-gray-600 font-semibold tracking-wide uppercase">
               About Us
             </h2>
-            <p className="mt-4 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-4 text-4xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
               Top-Tier Exhibition Stall <br /> Designer
             </p>
-            <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            <p className="mt-4 max-w-2xl text-3xl text-gray-500 lg:mx-auto">
               Being the leading Exhibition Stall Designing and build-up agency,
               our committed in-house production team meticulously pre-assembles
               and thoroughly inspects every stand before delivery - guaranteeing
@@ -28,18 +28,18 @@ const AboutUsComponent = () => {
             </p>
           </div>
         </Fade>
-        <div className=" flex flex-col lg:flex-row items-center justify-between lg:items-start ">
+        <div className=" flex flex-col lg:flex-row  justify-between lg:items-start ">
           <div className=" h-28" style={{ marginLeft: "700px" }}>
             <img
               className="rounded-3xl shadow-lg"
-              style={{ height: "600px" }}
+              style={{ height: "800px", width:"1000px" }}
               src="https://www.roofingmegastore.co.uk/media/wysiwyg/1._St._Paul_s_Cathedral_UK-min.jpg"
               alt="Exhibition Stall Design"
             />
           </div>
         </div>
 
-        <div className="mt-80 xl:mt-96 px-11 mr-36 z-10 sticky xl:w-2/3 ">
+        <div className="mt-80 xl:mt-96 px-11 mr-36 z-10 sticky xl:w-2/3" style={{marginTop:'500px'}}>
           <div className="flex flex-col md:flex-col p-24 md:px-7 lg:flex-col xl:flex-row justify-around bg-red-500 text-white py-8 px-4 rounded-lg shadow-md">
             <div className="text-center">
               <p className="text-2xl font-bold">

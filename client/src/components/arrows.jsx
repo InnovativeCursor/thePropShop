@@ -26,7 +26,7 @@ export const NextArrow = ({ className, style, onClick }) => (
 export const PrevArrow = ({ className, style, onClick }) => (
   <div
     className={`${className} custom-prev-arrow`}
-    style={{ ...style, display: "block" }}
+    style={{ ...style, display: "block", }}
     onClick={onClick}
   >
     <svg

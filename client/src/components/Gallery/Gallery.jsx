@@ -1,24 +1,56 @@
-import React from "react";
-
-const images = [
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEQRe9jRY98hQkFdBmLrfAldsDbE7id3cV8amz9LBEw&s",
-  "https://img.freepik.com/free-photo/empty-room-with-chairs-desks_23-2149008873.jpg?size=626&ext=jpg&ga=GA1.1.2082370165.1716249600&semt=ais_user",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEQRe9jRY98hQkFdBmLrfAldsDbE7id3cV8amz9LBEw&s",
-  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkEQRe9jRY98hQkFdBmLrfAldsDbE7id3cV8amz9LBEw&s",
-];
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Slider from "react-slick";
 
 const Gallery = () => {
+  const [images, setImages] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const response = await axios.get(
+          "http://api.thepropshopworldwide.com/heroSectionImages"
+        );
+        setImages(response.data); // Assuming the API response is an array of image URLs
+        setLoading(false);
+        console.log(response.data,'hero')
+      } catch (error) {
+        setError(error);
+        setLoading(false);
+      }
+    };
+
+    fetchImages();
+  }, []);
+
+  if (loading) return <div>Loading...</div>;
+  if (error) return <div>Error loading images.</div>;
+
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <section className="py-20">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-12 overflow-x-auto">
+        <div
+          className="grid grid-cols-1 md:grid-cols-7 lg:grid-cols-4 md:gap-8 lg:gap-12 h-5/6 w-auto gap-16"
+          style={{ gap: "30px", padding: "30px" }}
+        >
           {images.map((image, index) => (
             <div
               key={index}
-              className="rounded-xl overflow-hidden shadow-lg flex-shrink-0 w-full md:w-auto h-60 md:h-96"
+              className="rounded-2xl overflow-hidden shadow-lg md:w-auto h-96 md:h-96 xl:h-5/6"
+              style={{ width: "360px", height: "400px" }} // Adjusted image size
             >
               <img
-                src={image}
+                src={image.url}
                 alt={`Exhibit ${index + 1}`}
                 className="object-cover w-full h-full"
               />

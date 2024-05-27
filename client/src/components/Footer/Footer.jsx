@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="bg-black text-white py-4">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
-        <div className="text-lg h-16 w-44 mb-4 md:mb-0">
+        <div className="text-lg h-16 w-44 mb-4 md:mb-0 flex left-0">
           {/* <span className="font-bold text-xl">The</span> PROPSHOP WORLDWIDE */}
           <img src={logo} alt="Propshop Logo" />
         </div>

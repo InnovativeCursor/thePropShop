@@ -28,10 +28,10 @@ function ContactForm() {
     <div className={`${styles.contactFormContainer} mt-60`}>
         <div className="mr-20">
 
-      <h1 className="text-6xl">
+      <h1 className="text-9xl">
         We're social! If you'd <br/>like to talk about your <br/> project, get in touch.
       </h1>
-      <p className="mt-6">
+      <p className="mt-6 text-4xl">
         Regístrate y disfruta de todas las ventajas que te <br/> ofrecemos, introduce
         tus platos y empieza la <br/> transformación de tu restaurante:
       </p>

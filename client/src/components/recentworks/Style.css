@@ -1,9 +1,9 @@
 .custom-next-arrow{
       position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   z-index: 2;
-  background-color: rgba(247, 9, 9, 0.5); /* Adjust as necessary */
+  background-color: rgba(247, 9, 9, 0.5); 
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -13,13 +13,14 @@
   cursor: pointer;
   margin-top: -500px;
    padding-left: 10px;
+  
 }
 .custom-prev-arrow {
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   z-index: 2;
-  background-color: rgba(247, 11, 11, 0.5); /* Adjust as necessary */
+  background-color: rgba(247, 11, 11, 0.5); 
   border-radius: 50%;
   width: 80px;
   height: 80px;
@@ -28,14 +29,27 @@
   justify-content: center;
   cursor: pointer;
   margin-top: -500px;
-  margin-left: 1300px;
+  margin-left: 1780px;
   padding-left: 10px;
 }
 
 .custom-next-arrow {
-  right: 10px; /* Adjust as necessary */
+  right: -500px; /* Adjust as necessary */
 }
 
 .custom-prev-arrow {
-  right: 70px; /* Adjust as necessary to ensure spacing between arrows */
+  right: -400px; /* Adjust as necessary to ensure spacing between arrows */
+}
+.custom-next-arrow:hover{
+  background-color: pink;
+svg{
+  color: black;
+ }
+}
+.custom-prev-arrow:hover {
+ background-color: pink;
+ color: black;
+ svg{
+  color: black;
+ }
 }
