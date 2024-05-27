@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NextArrow, PrevArrow } from "../arrows";
-
+import { Fade } from "react-awesome-reveal";
 const Recentworks = () => {
   const settings = {
     dots: true,
@@ -70,23 +70,25 @@ const Recentworks = () => {
       </p>
       <Slider {...settings}>
         {slidesData.map((slide, index) => (
-          <div key={index} className="p-4">
-            <div
-              className="rounded-lg shadow-md overflow-hidden flex flex-col items-center relative mt-14"
-              style={{ height: "700px" }}
-            >
-              <img
-                src={slide.img}
-                alt={slide.title}
-                className="object-cover"
-                style={{ height: "700px", width: "100%" }}
-              />
-              <div className="absolute bottom-0 left-0 right-0 mb-6 bg-white bg-opacity-70 p-4 text-center">
-                <h3 className="text-xl font-semibold mb-2">{slide.title}</h3>
-                <p className="text-gray-600">{slide.expo}</p>
+          <Fade cascade damping={0.1} duration={2000}>
+            <div key={index} className="p-4">
+              <div
+                className="rounded-lg shadow-md overflow-hidden flex flex-col items-center relative mt-14"
+                style={{ height: "700px" }}
+              >
+                <img
+                  src={slide.img}
+                  alt={slide.title}
+                  className="object-cover"
+                  style={{ height: "700px", width: "100%" }}
+                />
+                <div className="absolute bottom-0 left-0 right-0 mb-6 bg-white bg-opacity-70 p-4 text-center">
+                  <h3 className="text-xl font-semibold mb-2">{slide.title}</h3>
+                  <p className="text-gray-600">{slide.expo}</p>
+                </div>
               </div>
             </div>
-          </div>
+          </Fade>
         ))}
       </Slider>
     </div>
