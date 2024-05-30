@@ -5,6 +5,9 @@ import { useEffect, useState } from "react";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import RelatedSearch from "../Pages/RelatedSearch";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 
 
@@ -25,8 +28,10 @@ function MainNavigation() {
         </>
       ) : (
         <>
+        {/* <Navbar/> */}
           <Routes>
             <Route exact path="/" element={<Home />} />
+            <Route exact path="/our-work" element={<RelatedSearch />} />
             
           </Routes>
           <ToastContainer
@@ -40,6 +45,7 @@ function MainNavigation() {
             draggable
             pauseOnHover
           />
+        {/* <Footer/> */}
         </>
       )}
     </>
